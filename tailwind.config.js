@@ -1,0 +1,97 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-in-out',
+        'slide-up': 'slideUp 0.8s ease-out',
+        'bounce-slow': 'bounce 2s infinite',
+        'pulse-slow': 'pulse 3s infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'rotate-slow': 'rotate 20s linear infinite',
+        'orbit': 'orbit 15s linear infinite',
+        'orbit-reverse': 'orbit-reverse 12s linear infinite',
+        'spiral': 'spiral 20s ease-in-out infinite',
+        'wave': 'wave 8s ease-in-out infinite',
+        'glow': 'glow 4s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        orbit: {
+          '0%': { transform: 'rotate(0deg) translateX(50px) rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg) translateX(50px) rotate(-360deg)' },
+        },
+        'orbit-reverse': {
+          '0%': { transform: 'rotate(0deg) translateX(40px) rotate(0deg)' },
+          '100%': { transform: 'rotate(-360deg) translateX(40px) rotate(360deg)' },
+        },
+        spiral: {
+          '0%': { transform: 'rotate(0deg) translateX(30px) scale(1)' },
+          '50%': { transform: 'rotate(180deg) translateX(60px) scale(1.2)' },
+          '100%': { transform: 'rotate(360deg) translateX(30px) scale(1)' },
+        },
+        wave: {
+          '0%, 100%': { transform: 'translateX(-100%)' },
+          '50%': { transform: 'translateX(100%)' },
+        },
+        glow: {
+          '0%': { boxShadow: '0 0 5px rgba(59, 130, 246, 0.5)' },
+          '100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.6)' },
+        },
+      },
+    },
+  },
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      "retro",
+      "light",
+      "dark",
+      "cupcake",
+      "bumblebee",
+      "emerald",
+      "corporate",
+      "synthwave",
+      "cyberpunk",
+      "valentine",
+      "halloween",
+      "garden",
+      "forest",
+      "aqua",
+      "lofi",
+      "pastel",
+      "fantasy",
+      "wireframe",
+      "black",
+      "luxury",
+      "dracula",
+      "cmyk",
+      "autumn",
+      "business",
+      "acid",
+      "lemonade",
+      "night",
+      "coffee",
+      "winter",
+      "dim",
+      "nord",
+      "sunset",
+    ],
+  },
+};
