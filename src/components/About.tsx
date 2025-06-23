@@ -64,6 +64,7 @@ const About: React.FC = () => {
     I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and PHP Full Stack, 
     building responsive and scalable applications with real-time capabilities and modern UI.
   </p>
+  <br />
   <p className="text-base-content/80 leading-relaxed">
     I've interned as a PHP backend developer at Tredon Tech, gaining hands-on experience with server-side 
     logic and MySQL databases. I'm also familiar with Android development using Java and have built 
