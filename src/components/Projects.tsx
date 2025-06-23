@@ -2,362 +2,371 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
 const Projects: React.FC = () => {
-  const projectSections = [
+const projectSections = [
+  {
+    title: 'Production Projects',
+    description: 'Large-scale full-stack applications developed using modern frameworks for deployment in real-world environments.',
+    projects: [
+      {
+        title: 'HitzChat',
+        description: 'A real-time full-stack chat application built with the MERN stack and Socket.io. Features include user authentication, real-time messaging, theme switching (32+ themes), and responsive UI using Tailwind CSS and DaisyUI.',
+        image: 'https://images.unsplash.com/photo-1580894908373-0c4e4c8592b3?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/HitzChat',
+        demo: 'https://hitzchat.onrender.com/'
+      },
+      {
+        title: 'Online Game Hub',
+        description: 'An online platform hosting browser games, built using React.js and Firebase. Includes user registration, authentication, and interactive game play experiences.',
+        image: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b1?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/OnlineGameHub',
+        demo: 'https://onlinegamehub.in/'
+      },
+      {
+        title: 'Pragati 2025',
+        description: 'Official tech-fest website for college event Pragati 2025. Collaborated on frontend development and responsive layout.',
+        image: 'https://images.unsplash.com/photo-1603570417499-3bbda9c8d638?auto=compress&cs=tinysrgb&w=600',
+        github: '#',
+        demo: 'https://www.pragati2025.site/'
+      }
+    ]
+  },
+  {
+    title: 'Authentication Projects',
+    description: 'Web applications featuring secure sign-up/login systems using JWT, Firebase Auth, or OAuth.',
+    projects: [
+      {
+        title: 'HitzChat',
+        description: 'MERN + Socket.io chat app with JWT-based secure login and real-time chat room functionality.',
+        image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/HitzChat',
+        demo: 'https://hitzchat.onrender.com/'
+      },
+      {
+        title: 'Online Game Hub',
+        description: 'Gaming hub that includes Firebase-based authentication and game tracking.',
+        image: 'https://images.unsplash.com/photo-1616265854893-9f0a011c410d?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/OnlineGameHub',
+        demo: 'https://onlinegamehub.in/'
+      },
+      {
+        title: 'Spotify Clone',
+        description: 'Music streaming UI clone using React, Tailwind, and Spotify API. Includes secure login with OAuth.',
+        image: 'https://images.unsplash.com/photo-1580894894510-046c90bcb8ac?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/React-Spotify-Clone',
+        demo: 'https://react-spotify-clone-eight.vercel.app/'
+      },
+      {
+        title: 'Netflix Clone',
+        description: 'Netflix-inspired UI clone built with React, Firebase, and TMDB API. Secure Firebase authentication included.',
+        image: 'https://images.unsplash.com/photo-1598899134739-24c46f58d731?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/Netflix-Clone-React-App',
+        demo: 'https://netflix-clone-react-app-one.vercel.app/'
+      }
+    ]
+  },
+  {
+    title: 'My Personal Project',
+    description: 'Portfolio websites created to represent my personal and professional web development journey.',
+    projects: [
+      {
+        title: 'Current Portfolio Site',
+        description: 'My latest portfolio website built to showcase all my major web and mobile projects.',
+        image: 'https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/Rohit-Personal-Portfolio',
+        demo: 'https://rohitsaw6207.github.io/Rohit-Personal-Portfolio/'
+      },
+      {
+        title: 'Project Showcase React App',
+        description: 'React-based site built specifically for showcasing all my projects in one place.',
+        image: 'https://images.unsplash.com/photo-1618005198919-d3d4d5c2e3e3?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/Rohit-Project-Showcase-Site',
+        demo: 'https://rohit-project-showcase-site.vercel.app/'
+      },
+      {
+        title: 'Old Portfolio Site',
+        description: 'Initial version of my portfolio created using HTML, CSS, and JavaScript.',
+        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=compress&cs=tinysrgb&w=600',
+        github: 'https://github.com/Rohitsaw6207/Rohit-Project-site',
+        demo: 'https://rohitsaw6207.github.io/Rohit-Project-site/'
+      }
+    ]
+  },
+  {
+    title: 'Android Applications',
+    description: 'Android apps developed using Java/Kotlin and Android Studio. Focused on usability, local storage, and location-based features.',
+    projects: [
+      {
+        title: 'Task Manager App',
+        description: 'A to-do list application with CRUD operations and local database using SQLite.',
+        image: 'https://images.unsplash.com/photo-1607083205977-208918f8d6c3?auto=compress&cs=tinysrgb&w=600',
+        github: '#',
+        demo: '#'
+      },
+      {
+        title: 'Weather Tracker',
+        description: 'Weather app with location-based forecast using OpenWeather API and geolocation.',
+        image: 'https://images.unsplash.com/photo-1616594039964-765b9ecb380b?auto=compress&cs=tinysrgb&w=600',
+        github: '#',
+        demo: '#'
+      }
+    ]
+  },
     {
-      title: 'Production Projects',
-      description: 'Large-scale applications built for real-world use with modern technologies and best practices',
-      projects: [
-        {
-          title: 'HitzChat',
-          description: 'Real-time chat app with MERN stack, Socket.io, Tailwind + DaisyUI, featuring 32 themes',
-          image: 'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Online Game Hub',
-          description: 'Online gaming platform built with React and Firebase',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Pragati 2025',
-          description: 'College tech-fest website - contributed to development team',
-          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+  title: 'API Key Integration Projects',
+  description: 'Projects that integrate with third-party APIs such as OpenWeatherMap and PokeAPI to provide real-time, dynamic content.',
+  projects: [
+    {
+      title: 'Weather App',
+      description: 'Weather forecast app that uses OpenWeatherMap API to provide real-time weather data based on user’s location or search query. Built with HTML, CSS, and vanilla JavaScript.',
+      image: 'https://images.unsplash.com/photo-1561484930-e991f6c24672?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Weather',
+      demo: 'https://rohitsaw6207.github.io/Weather/'
     },
     {
-      title: 'Authentication Projects',
-      description: 'Applications featuring secure user authentication systems and login functionality',
-      projects: [
-        {
-          title: 'HitzChat',
-          description: 'Real-time chat with secure authentication',
-          image: 'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Online Game Hub',
-          description: 'Gaming platform with user authentication',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Spotify Clone',
-          description: 'Music streaming app with user authentication',
-          image: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Netflix Clone',
-          description: 'Video streaming platform with secure login',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Pokédex',
+      description: 'A responsive web app that fetches and displays Pokémon data from the PokeAPI. Features include live search, image rendering, and type-based styling.',
+      image: 'https://images.unsplash.com/photo-1603048403371-7c06cbd5f9fe?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Pokedex-',
+      demo: 'https://rohitsaw6207.github.io/Pokedex-/'
+    }
+  ]
+},
+    {
+  title: 'Small Game Projects',
+  description: 'Fun and interactive browser-based games built with HTML, CSS, and JavaScript — ideal for practicing core logic, animation, and UI design.',
+  projects: [
+    {
+      title: 'Snake Game',
+      description: 'Classic snake game built using JavaScript and HTML Canvas. Features real-time movement, food pickup, and increasing speed.',
+      image: 'https://images.unsplash.com/photo-1611423434985-049f87f4a1da?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Snake-Game',
+      demo: 'https://rohitsaw6207.github.io/Snake-Game/'
     },
     {
-      title: 'My Portfolios',
-      description: 'Personal portfolio websites showcasing my work and development journey',
-      projects: [
-        {
-          title: 'MY Portfolio',
-          description: 'Current portfolio website showcasing my work',
-          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'WIP Site',
-          description: 'Work in progress portfolio site',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Old Portfolio',
-          description: 'Previous version of my portfolio',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Insect Catch Game',
+      description: 'Tap-to-catch style game with insect sprites, built using vanilla JS. Includes timer and difficulty levels.',
+      image: 'https://images.unsplash.com/photo-1590608897129-79da91a8225d?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Insect-catch-game',
+      demo: 'https://rohitsaw6207.github.io/Insect-catch-game/'
     },
     {
-      title: 'Android Applications',
-      description: 'Mobile applications developed for Android platform using modern development practices',
-      projects: [
-        {
-          title: 'Task Manager App',
-          description: 'Android task management application with local database',
-          image: 'https://images.pexels.com/photos/1319854/pexels-photo-1319854.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Weather Tracker',
-          description: 'Android weather app with location-based forecasting',
-          image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Tic-Tac-Toe',
+      description: 'Classic 2-player tic-tac-toe game with a minimal design. Tracks scores and prevents invalid moves.',
+      image: 'https://images.unsplash.com/photo-1581090700227-1b1b21c52020?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Tic-Tac-Toe-Game',
+      demo: 'https://rohitsaw6207.github.io/Tic-Tac-Toe-Game/'
     },
     {
-      title: 'API Key Integration Projects',
-      description: 'Applications that integrate with external APIs to fetch and display dynamic data',
-      projects: [
-        {
-          title: 'Weather App',
-          description: 'Weather forecasting with external API integration',
-          image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Pokédex',
-          description: 'Pokemon database with API data fetching',
-          image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Breakout Game',
+      description: 'Brick-breaking arcade game using HTML Canvas. Includes ball bounce physics, scoring, and levels.',
+      image: 'https://images.unsplash.com/photo-1614176101201-1e5a5d09e8f4?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Breakout-game',
+      demo: 'https://rohitsaw6207.github.io/Breakout-game/'
     },
     {
-      title: 'Small Game Projects',
-      description: 'Interactive browser-based games built with JavaScript and modern web technologies',
-      projects: [
-        {
-          title: 'Insect Catch Game',
-          description: 'Interactive catching game with JavaScript',
-          image: 'https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Tic-Tac-Toe',
-          description: 'Classic game with AI opponent',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Breakout Game',
-          description: 'Classic brick-breaking game',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Hangman',
-          description: 'Word guessing game with interactive UI',
-          image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Hangman Game',
+      description: 'Word-guessing game with visual feedback for each wrong guess. Includes hints and reset functionality.',
+      image: 'https://images.unsplash.com/photo-1614266189175-07e7f43d690f?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Hangman-Game',
+      demo: 'https://rohitsaw6207.github.io/Hangman-Game/'
+    }
+  ]
+},
+{
+  title: 'Basic Projects',
+  description: 'Fundamental frontend projects built using HTML, CSS, and JavaScript — covering timers, calculators, quizzes, clocks, and UI experiments.',
+  projects: [
+    {
+      title: 'Calculator',
+      description: 'A scientific calculator web app that handles arithmetic, trigonometry, and percentage operations.',
+      image: 'https://images.pexels.com/photos/6686448/pexels-photo-6686448.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Calculator',
+      demo: 'https://rohitsaw6207.github.io/Calculator/'
     },
     {
-      title: 'Basic Projects',
-      description: 'Fundamental web development projects demonstrating core programming concepts and skills',
-      projects: [
-        {
-          title: 'Calculator',
-          description: 'Scientific calculator with advanced functions',
-          image: 'https://images.pexels.com/photos/6686448/pexels-photo-6686448.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Solar System Animation',
-          description: 'Animated solar system with CSS and JavaScript',
-          image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Theme Clock',
-          description: 'Digital clock with multiple themes',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Simple Timer',
-          description: 'Countdown timer with alarm functionality',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Myntra Clone',
-          description: 'E-commerce platform clone',
-          image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Memory Cards',
-          description: 'Memory matching card game',
-          image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Bharat Clock',
-          description: 'Indian timezone clock application',
-          image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'To-do App',
-          description: 'Task management application',
-          image: 'https://images.pexels.com/photos/1319854/pexels-photo-1319854.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Typing Game',
-          description: 'Speed typing test game',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'FAQ Collapse',
-          description: 'Collapsible FAQ section component',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Quiz App',
-          description: 'Interactive quiz application',
-          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Solar System Animation',
+      description: 'Visual representation of the solar system using pure CSS animations and positioning logic.',
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Solar-System-Animation',
+      demo: 'https://rohitsaw6207.github.io/Solar-System-Animation/'
     },
     {
-      title: 'Card Slider Projects',
-      description: 'Interactive UI components featuring various card layouts and slider animations',
-      projects: [
-        {
-          title: 'Card Effect Slider',
-          description: 'Interactive card slider with effects',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Landscape Card',
-          description: 'Beautiful landscape card component',
-          image: 'https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Split Landing Page',
-          description: 'Split screen landing page design',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Expanding Cards',
-          description: 'Cards that expand on hover',
-          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Vertical Slider',
-          description: 'Vertical image slider component',
-          image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Background Slider',
-          description: 'Full-screen background slider',
-          image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Theme Clock',
+      description: 'A modern digital clock with switchable dark/light themes and real-time updating hands.',
+      image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Theme-Clock',
+      demo: 'https://rohitsaw6207.github.io/Theme-Clock/'
     },
     {
-      title: 'Minor Web Projects',
-      description: 'Small-scale web components and interactive elements showcasing specific techniques',
-      projects: [
-        {
-          title: 'Glitch Button',
-          description: 'Button with glitch animation effect',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Hoverboard',
-          description: 'Interactive hoverboard animation',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Kinetic Loader',
-          description: 'Animated loading spinner',
-          image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Loading Animation',
-          description: 'Custom loading animations',
-          image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Double Click Heart',
-          description: 'Instagram-like double click heart',
-          image: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: '3D Boxes BG',
-          description: '3D animated boxes background',
-          image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Dynamic BG',
-          description: 'Dynamic animated background',
-          image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Interactive BG',
-          description: 'Interactive particle background',
-          image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Simple Timer',
+      description: 'A minimal countdown timer with start/pause/reset controls and audio alert on completion.',
+      image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Simple-Timmer',
+      demo: 'https://rohitsaw6207.github.io/Simple-Timmer/'
     },
+    {
+      title: 'Myntra Clone',
+      description: 'A static clone of Myntra’s homepage including banner sliders, product sections, and footer.',
+      image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Myntra-Clone',
+      demo: 'https://rohitsaw6207.github.io/Myntra-Clone/'
+    },
+    {
+      title: 'Memory Cards',
+      description: 'Card flipping memory game that tests user’s recall speed and accuracy. Built using JS DOM.',
+      image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/memory-cards',
+      demo: 'https://rohitsaw6207.github.io/memory-cards/'
+    },
+    {
+      title: 'Bharat Clock',
+      description: 'Displays Indian Standard Time with a real-time updating analog and digital clock.',
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/bharat-clock-self',
+      demo: 'https://bharat-clock-self.vercel.app/'
+    },
+    {
+      title: 'To-do App',
+      description: 'Simple and clean task manager where you can add, delete, and check off completed tasks.',
+      image: 'https://images.pexels.com/photos/1319854/pexels-photo-1319854.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/To-Do-App',
+      demo: 'https://to-do-app-tau-beige.vercel.app/'
+    },
+    {
+      title: 'Typing Game',
+      description: 'A typing speed test game that challenges users with random words and WPM calculation.',
+      image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Typing-Game',
+      demo: 'https://rohitsaw6207.github.io/Typing-Game/'
+    },
+    {
+      title: 'FAQ Collapse',
+      description: 'Frequently Asked Questions section with expandable and collapsible answer toggles.',
+      image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/F-A-Q-collapse',
+      demo: 'https://rohitsaw6207.github.io/F-A-Q-collapse/'
+    },
+    {
+      title: 'Quiz App',
+      description: 'Multiple-choice quiz app with score counter and feedback after each answer.',
+      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Quiz-App',
+      demo: 'https://rohitsaw6207.github.io/Quiz-App/'
+    }
+  ]
+},
+{
+  title: 'Card Slider Projects',
+  description: 'Projects demonstrating advanced UI/UX design with animated cards, slider effects, and split layouts for modern web interfaces.',
+  projects: [
+    {
+      title: 'Card Effect Slider',
+      description: 'Carousel-style card slider with interactive transitions and hover effects.',
+      image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Card-Effect-Slider',
+      demo: 'https://rohitsaw6207.github.io/Card-Effect-Slider/'
+    },
+    {
+      title: 'Landscape Card',
+      description: 'Visually pleasing landscape card layout using Flexbox and responsive design.',
+      image: 'https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Landscape-Cards',
+      demo: 'https://rohitsaw6207.github.io/Landscape-Cards/'
+    },
+    {
+      title: 'Split Landing Page',
+      description: 'Two-panel landing page with hover effect to reveal alternate content.',
+      image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Split-Landing-Page',
+      demo: 'https://rohitsaw6207.github.io/Split-Landing-Page/'
+    },
+    {
+      title: 'Expanding Cards',
+      description: 'Cards that expand to highlight content with fluid animations.',
+      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Expanding-Cards',
+      demo: 'https://rohitsaw6207.github.io/Expanding-Cards/'
+    },
+    {
+      title: 'Vertical Slider',
+      description: 'A vertically scrollable slider to display content stacks in modern UI style.',
+      image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Vertical-Slider',
+      demo: 'https://rohitsaw6207.github.io/Vertical-Slider/'
+    },
+    {
+      title: 'Background Slider',
+      description: 'Full-screen slider with changing background images and auto transition.',
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Background-Slider',
+      demo: 'https://rohitsaw6207.github.io/Background-Slider/'
+    }
+  ]
+},
+
+    {
+  title: 'Minor Web Projects',
+  description: 'A collection of creative micro-interaction projects showcasing CSS animations, hover effects, and canvas logic.',
+  projects: [
+    {
+      title: 'Glitch Button',
+      description: 'Animated glitchy button using CSS keyframes and hover states.',
+      image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Glitch-Button',
+      demo: 'https://rohitsaw6207.github.io/Glitch-Button/'
+    },
+    {
+      title: 'Hoverboard',
+      description: 'JS hover animation with color burst grid interaction on mouse enter.',
+      image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Hoverboard',
+      demo: 'https://rohitsaw6207.github.io/Hoverboard/'
+    },
+    {
+      title: 'Kinetic Loader',
+      description: 'CSS-based animated loading spinner with kinetic movement illusion.',
+      image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Kinetic-Loader',
+      demo: 'https://rohitsaw6207.github.io/Kinetic-Loader/'
+    },
+    {
+      title: 'Loading Animation',
+      description: 'Creative loading screens using SVG, CSS animations, and pulse effects.',
+      image: 'https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Loading-Animation',
+      demo: 'https://rohitsaw6207.github.io/Loading-Animation/'
+    },
+    {
+      title: 'Double Click Heart',
+      description: 'Instagram-like double-tap to heart animation with counter logic.',
+      image: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Double-Click-Heart',
+      demo: 'https://rohitsaw6207.github.io/Double-Click-Heart/'
+    },
+    {
+      title: '3D Boxes BG',
+      description: 'CSS grid animation of rotating 3D boxes with dynamic effects.',
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/3D-Boxes-BG',
+      demo: 'https://rohitsaw6207.github.io/3D-Boxes-BG/'
+    },
+    {
+      title: 'Dynamic BG',
+      description: 'Gradient and particle-based dynamic background using JavaScript.',
+      image: 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Dynamic-BG',
+      demo: 'https://rohitsaw6207.github.io/Dynamic-BG/'
+    },
+    {
+      title: 'Interactive BG',
+      description: 'Canvas-based animated particles reacting to mouse movement.',
+      image: 'https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Interactive-BG',
+      demo: 'https://rohitsaw6207.github.io/Interactive-BG/'
+    }
+  ]
+},
+,
     {
       title: 'Other Projects (Data Analysis)',
       description: 'Data science and analytics projects using Python, machine learning, and visualization tools',

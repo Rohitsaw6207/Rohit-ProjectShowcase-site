@@ -23,7 +23,7 @@ const About: React.FC = () => {
             <div className="avatar animate-fade-in">
               <div className="w-80 rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300">
                 <img
-                  src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="002.jpg"
                   alt="Rohit Kumar"
                   className="rounded-2xl"
                 />
