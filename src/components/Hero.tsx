@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
             <div className="avatar mb-8 animate-fade-in">
               <div className="w-48 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 hover:scale-110 hover:-rotate-3 transition-all duration-300 shadow-2xl">
                 <img
-                  src="/002.png"
+                  src="/002.jpg"
                   alt="Rohit Kumar"
                   className="rounded-full"
                 />
