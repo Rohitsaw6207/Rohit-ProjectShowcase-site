@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
               <div className="avatar">
                 <div className="w-80 xl:w-96 rounded-full ring ring-primary ring-offset-base-100 ring-offset-4 hover:scale-110 hover:-rotate-3 transition-all duration-300 shadow-2xl hover:shadow-primary/25">
                   <img
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    src="002.jpg"
                     alt="Rohit Kumar"
                     className="rounded-full"
                   />
