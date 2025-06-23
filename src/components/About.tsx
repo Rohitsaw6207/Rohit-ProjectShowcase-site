@@ -31,41 +31,47 @@ const About: React.FC = () => {
             </div>
           </div>
           
-          <div className="space-y-6">
-            <div className="flex justify-center">
-              <div className="grid md:grid-cols-2 gap-6 max-w-md w-full">
-                <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in w-full">
-                  <div className="card-body items-center text-center">
-                    <Briefcase className="h-8 w-8 text-primary mb-2 animate-pulse" />
-                    <h3 className="card-title text-lg">Experience</h3>
-                    <p className="text-base-content/70">2+ years</p>
-                    <p className="text-sm text-base-content/60">Frontend Development</p>
-                  </div>
-                </div>
-                
-                <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in w-full" style={{ animationDelay: '0.2s' }}>
-                  <div className="card-body items-center text-center">
-                    <GraduationCap className="h-8 w-8 text-primary mb-2 animate-pulse" />
-                    <h3 className="card-title text-lg">Education</h3>
-                    <p className="text-base-content/70">B.Sc. Bachelors Degree</p>
-                    <p className="text-sm text-base-content/60">M.Sc. Masters Degree</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+<div className="space-y-6">
+  <div className="flex justify-center">
+    <div className="grid md:grid-cols-2 gap-6 max-w-md w-full">
+      
+      {/* Experience Card */}
+      <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in w-full">
+        <div className="card-body items-center text-center">
+          <Briefcase className="h-8 w-8 text-primary mb-2 animate-pulse" />
+          <h3 className="card-title text-lg">Experience</h3>
+          <p className="text-base-content/70">Internship + Projects</p>
+          <p className="text-sm text-base-content/60">Full Stack & Backend (PHP, MERN)</p>
+        </div>
+      </div>
+      
+      {/* Education Card */}
+      <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in w-full" style={{ animationDelay: '0.2s' }}>
+        <div className="card-body items-center text-center">
+          <GraduationCap className="h-8 w-8 text-primary mb-2 animate-pulse" />
+          <h3 className="card-title text-lg">Education</h3>
+          <p className="text-base-content/70">B.Voc in Software Development</p>
+          <p className="text-sm text-base-content/60">MCKV Institute of Engineering</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
             
-            <div className="prose prose-lg max-w-none animate-slide-up">
-              <p className="text-base-content/80 leading-relaxed">
-                I'm a passionate Full Stack Developer with expertise in modern web technologies. 
-                I specialize in building responsive, user-friendly applications using the MERN stack, 
-                React, and cutting-edge tools like Tailwind CSS and DaisyUI. 
-              </p>
-              <p className="text-base-content/80 leading-relaxed">
-                My experience spans from creating real-time chat applications to developing 
-                comprehensive gaming platforms. I'm constantly learning and exploring new 
-                technologies to deliver innovative solutions that make a difference.
-              </p>
-            </div>
+<div className="prose prose-lg max-w-none animate-slide-up">
+  <p className="text-base-content/80 leading-relaxed">
+    I'm a 3rd-year Software Development student with a strong passion for full stack web development. 
+    I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and PHP Full Stack, 
+    building responsive and scalable applications with real-time capabilities and modern UI.
+  </p>
+  <p className="text-base-content/80 leading-relaxed">
+    I've interned as a PHP backend developer at Tredon Tech, gaining hands-on experience with server-side 
+    logic and MySQL databases. I'm also familiar with Android development using Java and have built 
+    multiple web and mobile projects that reflect my versatility. I'm passionate about transforming 
+    ideas into scalable digital solutions and continuously improving through learning and collaboration.
+  </p>
+</div>
+
           </div>
         </div>
       </div>
