@@ -366,7 +366,6 @@ const projectSections = [
     }
   ]
 },
-,
     {
       title: 'Other Projects (Data Analysis)',
       description: 'Data science and analytics projects using Python, machine learning, and visualization tools',
