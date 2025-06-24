@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
                 Rohit Kumar
               </h1>
               <p className="text-2xl mb-4 text-base-content/80 animate-fade-in">
-                Software Development Student & Web App Enthusiast
+                Full Stack Developer
               </p>
 
               <p className="text-base-content/70 mb-8 max-w-2xl mx-auto animate-fade-in">
@@ -168,7 +168,7 @@ const Hero: React.FC = () => {
                 Rohit Kumar
               </h1>
               <p className="text-3xl xl:text-4xl mb-6 text-base-content/80 animate-fade-in">
-                Software Development Student & Web App Enthusiast
+                Full Stack Developer
               </p>
 
               <p className="text-lg text-base-content/70 mb-12 animate-fade-in max-w-xl">
