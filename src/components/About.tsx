@@ -66,7 +66,7 @@ const About: React.FC = () => {
   </p>
   <br />
   <p className="text-base-content/80 leading-relaxed">
-    I've interned as a PHP backend developer at Tredon Tech, gaining hands-on experience with server-side 
+    I've interned as a PHP backend developer at Trideon Tech, gaining hands-on experience with server-side 
     logic and MySQL databases. I'm also familiar with Android development using Java and have built 
     multiple web and mobile projects that reflect my versatility. I'm passionate about transforming 
     ideas into scalable digital solutions and continuously improving through learning and collaboration.
