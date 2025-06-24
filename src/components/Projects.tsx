@@ -366,26 +366,26 @@ const projectSections = [
     }
   ]
 },
+{
+  title: 'Other Projects (Data Analysis)',
+  description: 'Data analysis dashboards created using Excel and Power BI to uncover key business insights from real-world datasets.',
+  projects: [
     {
-      title: 'Other Projects (Data Analysis)',
-      description: 'Data science and analytics projects using Python, machine learning, and visualization tools',
-      projects: [
-        {
-          title: 'Sales Analytics Dashboard',
-          description: 'Data visualization dashboard for sales analysis using Python and Pandas',
-          image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        },
-        {
-          title: 'Customer Behavior Analysis',
-          description: 'Machine learning project analyzing customer patterns and preferences',
-          image: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: '#',
-          demo: '#'
-        }
-      ]
+      title: 'Excel Dashboard – Krishna Store Report 2023',
+      description: 'Interactive Excel dashboard summarizing Krishna Store’s 2023 performance with insights like monthly trends, top states, gender-wise sales, and platform performance.',
+      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Data-Analysis/tree/main/Excel%20Dashboard',
+      demo: '#'
+    },
+    {
+      title: 'Swiggy Power BI Dashboard',
+      description: 'Interactive Power BI dashboard analyzing Swiggy’s performance across cities with insights on user behavior, sales, ratings, and food trends.',
+      image: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600',
+      github: 'https://github.com/Rohitsaw6207/Data-Analysis/tree/main/PowerBI%20Dashboard',
+      demo: '#'
     }
+  ]
+}
   ];
 
   return (
