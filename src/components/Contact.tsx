@@ -13,21 +13,21 @@ const Contact: React.FC = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/rohit-kumar-saw6207',
+      value: 'rohit-kumar-saw6207',
       href: 'https://linkedin.com/in/rohit-kumar-saw6207',
       color: 'text-blue-600'
     },
     {
       icon: Github,
       label: 'GitHub',
-      value: 'github.com/Rohitsaw6207',
+      value: 'Rohitsaw6207',
       href: 'https://github.com/Rohitsaw6207',
       color: 'text-gray-700'
     },
     {
       icon: Globe,
       label: 'Portfolio',
-      value: 'Rohit Portfolio',
+      value: 'My Personal Portfolio',
       href: '#',
       color: 'text-primary'
     },
