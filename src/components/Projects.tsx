@@ -489,7 +489,7 @@ const projectSections = [
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="text-lg text-base-content/70 mb-4 animate-fade-in">Browse My Recent</p>
+          <p className="text-lg text-base-content/70 mb-4 animate-fade-in">Browse My All</p>
           <h2 className="text-5xl font-bold mb-8 animate-slide-up bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
             Projects
           </h2>

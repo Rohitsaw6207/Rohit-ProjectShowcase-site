@@ -20,25 +20,25 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-40 right-40 w-5 h-5 bg-primary/70 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
         <div className="absolute top-1/2 left-10 w-3 h-3 bg-secondary/70 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-10 right-10 w-2 h-2 bg-accent/70 rounded-full animate-bounce" style={{ animationDelay: '2.5s' }}></div>
-        
+
         {/* Medium particles */}
         <div className="absolute top-32 left-1/3 w-2 h-2 bg-primary/50 rounded-full animate-ping" style={{ animationDelay: '0.3s' }}></div>
         <div className="absolute top-60 right-1/3 w-3 h-3 bg-secondary/50 rounded-full animate-float" style={{ animationDelay: '0.8s' }}></div>
         <div className="absolute bottom-32 left-1/4 w-2 h-2 bg-accent/50 rounded-full animate-bounce" style={{ animationDelay: '1.3s' }}></div>
         <div className="absolute bottom-60 right-1/4 w-4 h-4 bg-primary/40 rounded-full animate-pulse" style={{ animationDelay: '1.8s' }}></div>
-        
+
         {/* Small particles */}
         <div className="absolute top-24 left-1/2 w-1 h-1 bg-secondary/60 rounded-full animate-ping" style={{ animationDelay: '0.2s' }}></div>
         <div className="absolute top-80 right-1/2 w-1 h-1 bg-accent/60 rounded-full animate-float" style={{ animationDelay: '0.7s' }}></div>
         <div className="absolute bottom-24 left-2/3 w-1 h-1 bg-primary/60 rounded-full animate-bounce" style={{ animationDelay: '1.2s' }}></div>
         <div className="absolute bottom-80 right-2/3 w-2 h-2 bg-secondary/40 rounded-full animate-pulse" style={{ animationDelay: '1.7s' }}></div>
-        
+
         {/* Extra particles for density */}
         <div className="absolute top-16 left-3/4 w-1 h-1 bg-accent/40 rounded-full animate-ping" style={{ animationDelay: '0.4s' }}></div>
         <div className="absolute top-96 right-3/4 w-1 h-1 bg-primary/40 rounded-full animate-float" style={{ animationDelay: '0.9s' }}></div>
         <div className="absolute bottom-16 left-1/6 w-1 h-1 bg-secondary/40 rounded-full animate-bounce" style={{ animationDelay: '1.4s' }}></div>
         <div className="absolute bottom-96 right-1/6 w-1 h-1 bg-accent/40 rounded-full animate-pulse" style={{ animationDelay: '1.9s' }}></div>
-        
+
         {/* Dynamic moving elements */}
         <div className="absolute top-1/4 left-1/4 w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full animate-orbit"></div>
         <div className="absolute top-3/4 right-1/4 w-4 h-4 bg-gradient-to-r from-secondary to-accent rounded-full animate-orbit-reverse"></div>
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Interactive Mouse Effect */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background: 'radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(var(--primary-rgb, 59, 130, 246), 0.1), transparent 40%)'
@@ -73,21 +73,31 @@ const Hero: React.FC = () => {
                 />
               </div>
             </div>
-            
+
             <div className="animate-slide-up">
               <p className="text-lg mb-2 text-base-content/70 animate-fade-in">Hello, I'm</p>
               <h1 className="text-5xl font-bold mb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-slide-up">
                 Rohit Kumar
               </h1>
-              <p className="text-2xl mb-8 text-base-content/80 animate-fade-in">Full Stack Developer</p>
-              
+              <p className="text-2xl mb-4 text-base-content/80 animate-fade-in">
+                Software Development Student & Web App Enthusiast
+              </p>
+
+              <p className="text-base-content/70 mb-8 max-w-2xl mx-auto animate-fade-in">
+                This website is dedicated to showcasing my personal and academic web projects.
+                If you're looking for my portfolio with detailed experience, skills, and certifications,
+                please visit my main portfolio site.
+              </p>
+
               <div className="flex gap-4 justify-center mb-8">
-                <button
-                  onClick={() => scrollToSection('projects')}
+                <a
+                  href="https://rohitsaw6207.github.io/Rohit-Personal-Portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-primary btn-lg hover:scale-105 transition-transform duration-300 animate-fade-in shadow-lg"
                 >
-                  Portfolio
-                </button>
+                  Visit Portfolio
+                </a>
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="btn btn-outline btn-lg hover:scale-105 transition-transform duration-300 animate-fade-in shadow-lg"
@@ -95,7 +105,7 @@ const Hero: React.FC = () => {
                   Contact Info
                 </button>
               </div>
-              
+
               <div className="flex gap-4 justify-center">
                 <a
                   href="https://linkedin.com/in/rohit-kumar-saw6207"
@@ -133,6 +143,7 @@ const Hero: React.FC = () => {
                 </a>
               </div>
             </div>
+
           </div>
 
           {/* Desktop Layout - Side by Side */}
@@ -149,22 +160,32 @@ const Hero: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Details */}
             <div className="flex-1 max-w-2xl animate-slide-up">
               <p className="text-xl mb-4 text-base-content/70 animate-fade-in">Hello, I'm</p>
               <h1 className="text-6xl xl:text-7xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-slide-up">
                 Rohit Kumar
               </h1>
-              <p className="text-3xl xl:text-4xl mb-12 text-base-content/80 animate-fade-in">Full Stack Developer</p>
-              
+              <p className="text-3xl xl:text-4xl mb-6 text-base-content/80 animate-fade-in">
+                Software Development Student & Web App Enthusiast
+              </p>
+
+              <p className="text-lg text-base-content/70 mb-12 animate-fade-in max-w-xl">
+                This website showcases a variety of personal and academic web projects I’ve built.
+                To explore my full portfolio, including professional experience and certifications,
+                please visit my main site.
+              </p>
+
               <div className="flex gap-6 mb-12">
-                <button
-                  onClick={() => scrollToSection('projects')}
+                <a
+                  href="https://rohitsaw6207.github.io/Rohit-Personal-Portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-primary btn-lg hover:scale-105 transition-transform duration-300 animate-fade-in shadow-lg hover:shadow-primary/25"
                 >
-                  Portfolio
-                </button>
+                  Visit Portfolio
+                </a>
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="btn btn-outline btn-lg hover:scale-105 transition-transform duration-300 animate-fade-in shadow-lg"
@@ -172,7 +193,7 @@ const Hero: React.FC = () => {
                   Contact Info
                 </button>
               </div>
-              
+
               <div className="flex gap-6">
                 <a
                   href="https://linkedin.com/in/rohit-kumar-saw6207"
@@ -210,6 +231,7 @@ const Hero: React.FC = () => {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
