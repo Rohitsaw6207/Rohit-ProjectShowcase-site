@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Technologies</h4>
             <div className="flex flex-wrap gap-2">
-              {['React', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS', 'DaisyUI'].map((tech) => (
+              {['React', 'TypeScript', 'Tailwind CSS', 'DaisyUI'].map((tech) => (
                 <span key={tech} className="badge badge-outline">
                   {tech}
                 </span>
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
             Developed by Rohit Kumar
           </p>
           <p className="text-base-content/70">
-            © 2025 Rohit's project showcase. All rights reserved.
+            © 2025 Rohit's project showcase site. All rights reserved.
           </p>
         </div>
       </div>
