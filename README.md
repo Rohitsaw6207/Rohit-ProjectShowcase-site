@@ -10,7 +10,7 @@ The site is styled using **Tailwind CSS** with **DaisyUI**, and features a **the
 ## 🖼️ Preview
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Rohitsaw6207/Rohit-ProjectShowcase-site/main/public/website-demo-image/001.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/Rohitsaw6207/Rohit-ProjectShowcase-site/main/public/website-demo-image/001.png" width="43%" />
   <img src="https://raw.githubusercontent.com/Rohitsaw6207/Rohit-ProjectShowcase-site/main/public/website-demo-image/002.png" width="45%" />
 </p>
 
