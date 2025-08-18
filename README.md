@@ -6,7 +6,6 @@ The site is styled using **Tailwind CSS** with **DaisyUI**, and features a **the
 🌐 **Live Site:** [https://rohit-project-showcase-site.vercel.app/](https://rohit-project-showcase-site.vercel.app/)
 
 ---
-
 ## 🖼️ Preview
 
 <p align="center">
@@ -81,3 +80,4 @@ Click the **theme toggle button** in the header to instantly switch between all 
 ## ⭐ Support
 
 If you like this project, consider starring ⭐ the repository to support and inspire more work!
+
