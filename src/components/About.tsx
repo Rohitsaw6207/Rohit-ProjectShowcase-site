@@ -60,16 +60,11 @@ const About: React.FC = () => {
 
             <div className="prose prose-lg max-w-none animate-slide-up">
               <p className="text-base-content/80 leading-relaxed">
-                I'm a 3rd-year Software Development student with a strong passion for full stack web development.
-                I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and PHP Full Stack,
-                building responsive and scalable applications with real-time capabilities and modern UI.
+                I’m a final-year B.VOC Software Development student with a strong academic record (current YGPA: 9.1) and a deep interest in full stack web development. I focus on building responsive, scalable, and modern web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and PHP technologies.
               </p>
               <br />
               <p className="text-base-content/80 leading-relaxed">
-                I've interned as a PHP backend developer at Trideon Tech, gaining hands-on experience with server-side
-                logic and MySQL databases. I'm also familiar with Android development using Java and have built
-                multiple web and mobile projects that reflect my versatility. I'm passionate about transforming
-                ideas into scalable digital solutions and continuously improving through learning and collaboration.
+                I’ve gained hands-on experience as a PHP backend developer during my internship at Trideon Tech, where I worked on server-side logic and MySQL database management. I also have industrial training experience through multiple on-job trainings, including Laravel Framework, PHP Full Stack Development, Power BI, and Advanced Excel. Alongside web development, I hold intermediate knowledge in data analysis using Power BI and Excel, and basic experience in Android development with Java. I’m passionate about turning ideas into efficient, real-world digital solutions while continuously learning and improving through collaboration.
               </p>
             </div>
 
