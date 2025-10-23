@@ -64,8 +64,7 @@ const About: React.FC = () => {
               </p>
               <br />
               <p className="text-base-content/80 leading-relaxed">
-                I’ve gained hands-on experience as a PHP backend developer during my internship at Trideon Tech, where I worked on server-side logic and MySQL database management. I also have industrial training experience through multiple on-job trainings, including Laravel Framework, PHP Full Stack Development, Power BI, and Advanced Excel. Alongside web development, I hold intermediate knowledge in data analysis using Power BI and Excel, and basic experience in Android development with Java. I’m passionate about turning ideas into efficient, real-world digital solutions while continuously learning and improving through collaboration.
-              </p>
+I’ve interned as a PHP backend developer at Trideon Tech and completed industrial trainings in Laravel and PHP Full Stack Development. I’ve also explored data analytics, earning certifications in Power BI and Advanced Excel, which strengthened my understanding of data visualization and insights. Alongside this, I have basic knowledge of Android development using Java and enjoy building scalable digital solutions while continuously learning and improving my skills.              </p>
             </div>
 
           </div>
