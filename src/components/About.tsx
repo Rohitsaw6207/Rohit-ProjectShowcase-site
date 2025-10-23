@@ -60,7 +60,7 @@ const About: React.FC = () => {
 
             <div className="prose prose-lg max-w-none animate-slide-up">
               <p className="text-base-content/80 leading-relaxed">
-                I’m a final-year B.VOC Software Development student with a strong academic record (current YGPA: 9.1) and a deep interest in full stack web development. I focus on building responsive, scalable, and modern web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and PHP technologies.
+                I’m a final-year B.VOC Software Development student with a strong academic record (current YGPA: 9.1) and a deep interest in full stack web development. I focus on building responsive, scalable, and modern web applications using the MERN stack and PHP technologies.
               </p>
               <br />
               <p className="text-base-content/80 leading-relaxed">
