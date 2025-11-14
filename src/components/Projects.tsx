@@ -105,47 +105,47 @@ const Projects: React.FC = () => {
         }
       ]
     },
-    {
-      title: 'Android Applications',
-      description: 'Android apps developed using Java/Kotlin and Android Studio, focusing on real-time functionality, data processing, and clean UI/UX.',
-      projects: [
-        {
-          title: 'Calculator App',
-          description: 'A scientific calculator app built using Java in Android Studio featuring basic and advanced operations.',
-          image: 'https://images.pexels.com/photos/6686448/pexels-photo-6686448.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/Calculator%20App',
-          demo: '#'
-        },
-        {
-          title: 'HitzChat',
-          description: 'A real-time chat application with user authentication and Firebase backend for secure messaging.',
-          image: '1001.png',
-          github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/HitzChat',
-          demo: '#'
-        },
-        {
-          title: 'OnlineGameHub',
-          description: 'An Android adaptation of the OnlineGameHub web project, featuring browser-based games and user profiles.',
-          image: '1002.png',
-          github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/OnlineGameHub',
-          demo: '#'
-        },
-        {
-          title: 'Unit Converter App',
-          description: 'An Android utility app that converts units of measurement (length, weight, temperature, etc.) with smooth UI.',
-          image: 'https://images.pexels.com/photos/4386323/pexels-photo-4386323.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/Unit%20Converter%20App',
-          demo: ''
-        },
-        {
-          title: 'Weather App',
-          description: 'Weather forecasting Android app using OpenWeather API with geolocation and current condition updates.',
-          image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-          github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/Weather%20App',
-          demo: ''
-        }
-      ]
-    },
+    // {
+    //   title: 'Android Applications',
+    //   description: 'Android apps developed using Java/Kotlin and Android Studio, focusing on real-time functionality, data processing, and clean UI/UX.',
+    //   projects: [
+    //     {
+    //       title: 'Calculator App',
+    //       description: 'A scientific calculator app built using Java in Android Studio featuring basic and advanced operations.',
+    //       image: 'https://images.pexels.com/photos/6686448/pexels-photo-6686448.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //       github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/Calculator%20App',
+    //       demo: '#'
+    //     },
+    //     {
+    //       title: 'HitzChat',
+    //       description: 'A real-time chat application with user authentication and Firebase backend for secure messaging.',
+    //       image: '1001.png',
+    //       github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/HitzChat',
+    //       demo: '#'
+    //     },
+    //     {
+    //       title: 'OnlineGameHub',
+    //       description: 'An Android adaptation of the OnlineGameHub web project, featuring browser-based games and user profiles.',
+    //       image: '1002.png',
+    //       github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/OnlineGameHub',
+    //       demo: '#'
+    //     },
+    //     {
+    //       title: 'Unit Converter App',
+    //       description: 'An Android utility app that converts units of measurement (length, weight, temperature, etc.) with smooth UI.',
+    //       image: 'https://images.pexels.com/photos/4386323/pexels-photo-4386323.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //       github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/Unit%20Converter%20App',
+    //       demo: ''
+    //     },
+    //     {
+    //       title: 'Weather App',
+    //       description: 'Weather forecasting Android app using OpenWeather API with geolocation and current condition updates.',
+    //       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //       github: 'https://github.com/Rohitsaw6207/Android-Development/tree/main/Weather%20App',
+    //       demo: ''
+    //     }
+    //   ]
+    // },
     {
       title: 'API Key Integration Projects',
       description: 'Projects that integrate with third-party APIs such as OpenWeatherMap and PokeAPI to provide real-time, dynamic content.',
