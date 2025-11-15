@@ -8,6 +8,14 @@ const Projects: React.FC = () => {
       description: 'Large-scale full-stack applications developed using modern frameworks for deployment in real-world environments.',
       projects: [
         {
+  title: 'Hitro AI',
+  description:
+    'HitroAI is a full-stack AI-powered SaaS platform offering 5 AI tools, admin panel, premium system, Razorpay integration, dark/light themes, Firebase authentication, real-time database, and a complete AI productivity ecosystem built with React, Laravel, and Firebase.',
+  image: '1044.png',
+  github: 'https://github.com/Rohitsaw6207/Hitro_Aii',
+  demo: 'https://github.com/Rohitsaw6207/Hitro_Aii'
+},
+        {
           title: 'Hitro Chat',
           description: 'Hitro Chat is a full-stack real-time chat app built with Node.js, React, and MongoDB. It features JWT authentication, friend system, real-time messaging, and video calling. Includes 32+ UI themes, protected routes, and is fully ready for deployment.',
           image: '1043.png',
@@ -41,27 +49,6 @@ const Projects: React.FC = () => {
       title: 'Authentication Projects',
       description: 'Web applications featuring secure sign-up/login systems using JWT, Firebase Auth, or OAuth.',
       projects: [
-        {
-          title: 'Hitro Chat',
-          description: 'Hitro Chat is a full-stack real-time chat app built with Node.js, React, and MongoDB. It features JWT authentication, friend system, real-time messaging, and video calling. Includes 32+ UI themes, protected routes, and is fully ready for deployment.',
-          image: '1043.png',
-          github: 'https://github.com/Rohitsaw6207/HitzChat',
-          demo: 'https://hitzchat.onrender.com/'
-        },
-        {
-          title: 'Online Game Hub',
-          description: 'An online platform hosting browser games, built using React.js and Firebase. Includes user registration, authentication, and interactive game play experiences.',
-          image: '1002.png',
-          github: 'https://github.com/Rohitsaw6207/OnlineGameHub_V-3.0',
-          demo: 'https://onlinegamehub.in/'
-        },
-                {
-          title: 'HitzChat',
-          description: 'A real-time full-stack chat application built with the MERN stack and Socket.io. Features include user authentication, real-time messaging, theme switching (32+ themes), and responsive UI using Tailwind CSS and DaisyUI.',
-          image: '1001.png',
-          github: 'https://github.com/Rohitsaw6207/HitzChat',
-          demo: 'https://hitzchat.onrender.com/'
-        },
         {
           title: 'Spotify Clone',
           description: 'Music streaming UI clone using React, Tailwind, and Spotify API. Includes secure login with OAuth.',
