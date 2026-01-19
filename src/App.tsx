@@ -37,6 +37,7 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  
   return (
     <div className="min-h-screen bg-base-100 text-base-content">
       <Navbar activeSection={activeSection} />
