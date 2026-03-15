@@ -3,48 +3,55 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projectSections = [
+{
+  title: 'Production Projects',
+  description: 'Large-scale full-stack applications developed using modern frameworks for deployment in real-world environments.',
+  projects: [
     {
-      title: 'Production Projects',
-      description: 'Large-scale full-stack applications developed using modern frameworks for deployment in real-world environments.',
-      projects: [
-        {
-  title: 'Hitro AI',
-  description:
-    'HitroAI is a full-stack AI-powered SaaS platform offering 5 AI tools, admin panel, premium system, Razorpay integration, dark/light themes, Firebase authentication, real-time database, and a complete AI productivity ecosystem built with React, Laravel, and Firebase.',
-  image: '1044.png',
-  github: 'https://github.com/Rohitsaw6207/Hitro_Aii',
-  demo: 'https://github.com/Rohitsaw6207/Hitro_Aii'
-},
-        {
-          title: 'Hitro Chat',
-          description: 'Hitro Chat is a full-stack real-time chat app built with Node.js, React, and MongoDB. It features JWT authentication, friend system, real-time messaging, and video calling. Includes 32+ UI themes, protected routes, and is fully ready for deployment.',
-          image: '1043.png',
-          github: 'https://github.com/Rohitsaw6207/HitzChat',
-          demo: 'https://hitzchat.onrender.com/'
-        },
-        {
-          title: 'Online Game Hub',
-          description: 'An online platform hosting browser games, built using React.js and Firebase. Includes user registration, authentication, and interactive game play experiences.',
-          image: '1002.png',
-          github: 'https://github.com/Rohitsaw6207/OnlineGameHub_V-3.0',
-          demo: 'https://onlinegamehub.in/'
-        },
-                {
-          title: 'HitzChat',
-          description: 'A real-time full-stack chat application built with the MERN stack and Socket.io. Features include user authentication, real-time messaging, theme switching (32+ themes), and responsive UI using Tailwind CSS and DaisyUI.',
-          image: '1001.png',
-          github: 'https://github.com/Rohitsaw6207/HitzChat',
-          demo: 'https://hitzchat.onrender.com/'
-        },
-        {
-          title: 'Pragati 2025',
-          description: 'Official tech-fest website for college event Pragati 2025. Collaborated on frontend development and responsive layout.',
-          image: '1003.png',
-          github: 'https://github.com/Rohitsaw6207/Pragati-2025',
-          demo: 'https://www.pragati2025.site/'
-        }
-      ]
+      title: 'DevRo AI',
+      description: 'DevRo AI is an AI-powered development platform that converts ideas into production-ready web projects. It generates structured HTML or React applications with file architecture, live preview, Built with React, Tailwind CSS, Framer Motion, Firebase and Firestore, with Razorpay payment integration',
+      image: '1045.png',
+      github: 'https://github.com/Rohitsaw6207/DevRo-AI',
+      demo: 'https://devro-ai.vercel.app/'
     },
+    {
+      title: 'Hitro AI',
+      description:
+        'HitroAI is a full-stack AI-powered SaaS platform offering 5 AI tools, admin panel, premium system, Razorpay integration, dark/light themes, Firebase authentication, real-time database, and a complete AI productivity ecosystem built with React, Laravel, and Firebase.',
+      image: '1044.png',
+      github: 'https://github.com/Rohitsaw6207/Hitro_Aii',
+      demo: 'https://github.com/Rohitsaw6207/Hitro_Aii'
+    },
+    {
+      title: 'Hitro Chat',
+      description: 'Hitro Chat is a full-stack real-time chat app built with Node.js, React, and MongoDB. It features JWT authentication, friend system, real-time messaging, and video calling. Includes 32+ UI themes, protected routes, and is fully ready for deployment.',
+      image: '1043.png',
+      github: 'https://github.com/Rohitsaw6207/HitzChat',
+      demo: 'https://hitzchat.onrender.com/'
+    },
+    {
+      title: 'Online Game Hub',
+      description: 'An online platform hosting browser games, built using React.js and Firebase. Includes user registration, authentication, and interactive game play experiences.',
+      image: '1002.png',
+      github: 'https://github.com/Rohitsaw6207/OnlineGameHub_V-3.0',
+      demo: 'https://onlinegamehub.in/'
+    },
+    {
+      title: 'HitzChat',
+      description: 'A real-time full-stack chat application built with the MERN stack and Socket.io. Features include user authentication, real-time messaging, theme switching (32+ themes), and responsive UI using Tailwind CSS and DaisyUI.',
+      image: '1001.png',
+      github: 'https://github.com/Rohitsaw6207/HitzChat',
+      demo: 'https://hitzchat.onrender.com/'
+    },
+    {
+      title: 'Pragati 2025',
+      description: 'Official tech-fest website for college event Pragati 2025. Collaborated on frontend development and responsive layout.',
+      image: '1003.png',
+      github: 'https://github.com/Rohitsaw6207/Pragati-2025',
+      demo: 'https://www.pragati2025.site/'
+    }
+  ]
+},
     {
       title: 'Authentication Projects',
       description: 'Web applications featuring secure sign-up/login systems using JWT, Firebase Auth, or OAuth.',
@@ -66,7 +73,7 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      title: 'My Personal Project',
+      title: 'My Personal Portfolio Sites',
       description: 'Portfolio websites created to represent my personal and professional web development journey.',
       projects: [
         {
@@ -84,7 +91,7 @@ const Projects: React.FC = () => {
           demo: 'https://rohit-project-showcase-site.vercel.app/'
         },
         {
-          title: 'Old Project Site',
+          title: 'Old Project Showcase Site',
           description: 'Initial version of my project showcase site created using HTML, CSS, and JavaScript.',
           image: '1008.png',
           github: 'https://github.com/Rohitsaw6207/Rohit-Project-site',
